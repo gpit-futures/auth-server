@@ -23,10 +23,10 @@ eureka:
 # HTTP Server
 server:
   port: 3333   # HTTP (Tomcat) port
-  ssl:
-    enabled: true
-    key-alias: animalea
-    key-store: src/main/resources/leasslkeystore.p12
-    key-store-type: PKCS12
-    key-store-password: password
-    key-password: password
+ # ssl:
+ #   enabled: true
+ #   key-alias: animalea
+ #   key-store: src/main/resources/leasslkeystore.p12
+ #   key-store-type: PKCS12
+ #   key-store-password: password
+ #   key-password: password
