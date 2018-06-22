@@ -38,12 +38,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .password("password")
                 .authorities("FOO_READ", "FOO_WRITE")
                 .and()
-                .withUser("joe.bloggs5")
-                .password("password")
-                .authorities("FOO_BLAH")
-                .and()
                 .withUser("joe.blog")
                 .password("password")
-                .authorities("FOO_READ", "FOO_WRITE");
+                .authorities("FOO_READ");
     }
 }
