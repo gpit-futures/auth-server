@@ -71,7 +71,7 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
         		new KeyStoreKeyFactory(new ClassPathResource(
         				certificateProperties.getFilename()), certificateProperties.getPassword().toCharArray());
         
-        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+        JwtAccessTokenConverter converter = new OdsAwareAccessTokenConverter();
         converter.setKeyPair(keyStoreKeyFactory.getKeyPair(certificateProperties.getKeyPair()));
         return converter;
     }
