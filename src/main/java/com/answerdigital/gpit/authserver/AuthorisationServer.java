@@ -6,9 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-//@EnableDiscoveryClient
-//@EnableAuthorizationServer
-//@Import(AuthorisationWebApplication.class)
 public class AuthorisationServer {
 
 	public static void main(String[] args) {
