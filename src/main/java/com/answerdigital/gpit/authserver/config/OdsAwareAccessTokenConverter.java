@@ -13,7 +13,7 @@ public class OdsAwareAccessTokenConverter extends JwtAccessTokenConverter {
 	@Override
 	public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
 		
-		String odsId = authentication.getUserAuthentication().getName().equals("john.smith1")?"GPC001":"GPC002";
+		String odsId = authentication.getUserAuthentication().getName().equals("joe.blog")?"GPC002":"GPC001";
 		
 		Map<String, Object> properties = new HashMap<>();
 		properties.put("odsId", odsId);
